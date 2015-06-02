@@ -59,3 +59,13 @@ while (true) {
   x = x * 2;
   i = i + 1;
 }
+
+
+const int x = 5; // You can't change the value of x.
+#include <string> // Include some code someone else wrote. In this case, it's the "string" type.
+using namespace std; // standard things can be referred to easily. std::string -> string
+#include <iostream> // Include input/output functionality.
+cout << "Test"; // Output "Test"
+
+string foo;
+cin >> foo; // Read from terminal into variable foo.
