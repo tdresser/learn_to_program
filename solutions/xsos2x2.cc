@@ -80,58 +80,59 @@ int main() {
 
     if (location=="4") {
       if (b00 != EMPTY) {
-	cout << "You can't play there\n";
-	continue;
+	      cout << "You can't play there\n";
+	      continue;
       }
       if (xs_turn) {
-	b00 = X;
+	      b00 = X;
       }
       if (!xs_turn) {
-	b00 = O;
+	      b00 = O;
       }
     }
 
     if (location=="5") {
       if (b01 != EMPTY) {
-	cout << "You can't play there\n";
-	continue;
+	      cout << "You can't play there\n";
+	      continue;
       }
       if (xs_turn) {
-	b01 = X;
+	      b01 = X;
       }
       if (!xs_turn) {
-	b01 = O;
+	      b01 = O;
       }
     }
 
     if (location=="1") {
       if (b10 != EMPTY) {
-	cout << "You can't play there\n";
-	continue;
+	      cout << "You can't play there\n";
+	      continue;
       }
       if (xs_turn) {
-	b10 = X;
+	      b10 = X;
       }
       if (!xs_turn) {
-	b10 = O;
+	      b10 = O;
       }
     }
 
     if (location=="2") {
       if (b11 != EMPTY) {
-	cout << "You can't play there\n";
-	continue;
+	      cout << "You can't play there\n";
+	      continue;
       }
       if (xs_turn) {
-	b11 = X;
+       	b11 = X;
       }
       if (!xs_turn) {
-	b11 = O;
+	      b11 = O;
       }
     }
 
-    if (location=="q")
+    if (location=="q") {
       break;
+    }
     num_played = num_played + 1;
     xs_turn = !xs_turn;
   }
