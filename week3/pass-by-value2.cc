@@ -7,7 +7,7 @@ struct Container {
 };
 
 void setToFortyTwo(Container container) {
-  container.x = 2;
+  container.x = 42;
 }
 
 int main() {

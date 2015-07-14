@@ -3,7 +3,7 @@
 using namespace std;
 
 void setToFortyTwo(int* y) {
-  *y = 2; // *y is a "pointer dereference"
+  *y = 42; // *y is a "pointer dereference"
 }
 
 int main() {

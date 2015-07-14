@@ -3,7 +3,7 @@
 using namespace std;
 
 void setToFortyTwo(int y) {
-  y = 2;
+  y = 42;
 }
 
 int main() {
