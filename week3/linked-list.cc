@@ -20,7 +20,7 @@ void initNode(ListNode* current, int value, ListNode* next) {
 }
 
 void drawList(ListNode* x) {
-  while (x != NULL) {
+  while (x != nullptr) {
     cout << (*x).value << "\n";
     x = (*x).next;
   }
@@ -46,5 +46,5 @@ int main() {
   initNode(&d, 10, nullptr);
 
   drawList(&a);
-  drawList2(&a);
+  //drawList2(&a);
 }
