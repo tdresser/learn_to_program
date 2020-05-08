@@ -124,3 +124,13 @@ assertThat(sumOneToN(5) == 1 + 2 + 3 + 4 + 5, "Sum from 1 to 5 is correct.")
 - Float
 - Boolean
 - Scope
+
+## Exercise 1
+
+- Write a program that repeatedly asks for the name of a famous person, then gives them a fact about them.
+- Add a way to exit the program.
+
+## Exercise 2
+
+- Write a "Magic 8 Ball" program, which randomly outputs one of the magic 8 ball sayings.
+- What function do you need that you don't know about yet?
