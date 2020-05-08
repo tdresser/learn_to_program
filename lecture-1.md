@@ -4,6 +4,15 @@
 
 Read Eval Print Loop
 
+## Comments
+
+How to take notes.
+When to use comments.
+
+```python
+# Define literal.
+```
+
 ## Strings
 
 ```python
