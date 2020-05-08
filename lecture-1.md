@@ -1,5 +1,9 @@
 # Lecture 1: Variables & Functions
 
+## REPL
+
+Read Eval Print Loop
+
 ## Strings
 
 ```python
