@@ -10,7 +10,7 @@ How to take notes.
 When to use comments.
 
 ```python
-# Define literal.
+# Example comment.
 ```
 
 ## Strings
