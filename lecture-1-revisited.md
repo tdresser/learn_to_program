@@ -100,7 +100,7 @@ A function invocation needs:
 
 To evaluate, we start by evaluating the parameters.
 ```python
-add(3 + 4, 3)
+z = add(3 + 4, 3)
 z = add(7, 3)
 ```
 
