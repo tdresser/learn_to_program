@@ -180,4 +180,5 @@ Write a program to randomly print a magic 8 ball statement.
 
 Write a program that never stops.
 
+Write a program to sum the numbers from 1 to n.
 
