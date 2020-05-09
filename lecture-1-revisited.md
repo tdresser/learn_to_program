@@ -70,10 +70,10 @@ def add(x, y):
 A definition just modifies the program state, to know that addOne = ...
 
 ### Parts of a function:
-Name
-Parameters
-Body
-Return Value
+* Name
+* Parameters
+* Body
+* Return Value
 
 To invoke a function, we write, for example.
 ```python
