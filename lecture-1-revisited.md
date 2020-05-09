@@ -1,3 +1,9 @@
+## vscode 
+Let's stop using the REPL.
+One file for testing, one file for the current exercise.
+
+Return value vs printing.
+
 ## What is a computer program?
 
 A bunch of statements, telling the computer what to do.
@@ -55,6 +61,14 @@ Modify the program state, to know that:
 When we encouter a variable (unless it's on the left hand side of an assignment operator)
 Replace the variable with it's value, from the program state.
 
+
+Without running it, what is the program state after running:
+```python
+x = 3 + 2
+y = x * 3
+y = y + y
+```
+
 ## Functions
 Functions are a way of taking a chunk of code, and hiding it behind a clear name. This helps readability, and makes it easy to reuse chunks of code.
 
@@ -69,9 +83,9 @@ def add(x, y):
 
 A definition just modifies the program state, to know that addOne = ...
 
-### Parts of a function:
+### Parts of a function definition:
 * Name
-* Parameters
+* Parameters (possibly none)
 * Body
 * Return Value
 
@@ -79,6 +93,10 @@ To invoke a function, we write, for example.
 ```python
 z = add(3 + 4, 3)
 ```
+
+A function invocation needs:
+* Name
+* Parameter Values (possibly none)
 
 To evaluate, we start by evaluating the parameters.
 ```python
@@ -93,10 +111,73 @@ z = add(7, 3)
 z = {
   x = 7
   y = 3
-  x + y
+  return x + y
 } = {
-  7 + 3
+  return 7 + 3
 } = 10
 ```
 
 I'm using the curly braces to indicate "scope". The x and y here wouldn't overwrite existing x and y variables.
+
+The result of evaluating the function is whatever is `returned`.
+
+## Functions we know.
+```python
+input() # What does this do?
+print() # What does this do?
+```
+
+Exercise - 
+Write a program which defines and prints the result of a function returning whether
+  the sum of the first two parameters equals the sum of the second two parameters.
+Exercise - madlib.
+
+## If
+```python
+if 2 == 3:
+    print "yes"
+else:
+    print "no"
+```
+
+Evaluation: first evaluate the condition, then evaluate the appropriate branch.
+
+```python
+if 2 == 3:
+    print "yes"
+else:
+    print "no"
+```
+
+```python
+if False:
+    print "yes"
+else:
+    print "no"
+```
+
+```python
+    print "no"
+```
+
+## Exercises
+Write a function which takes three inputs. If the first two aren't equal, print out the third. Otherwise, do nothing.
+
+Use this to write a test for our function above a + b == c + d.
+
+Write a function to return the results of a single die roll.
+
+import random # put at the top. Pull in extra built in functions.
+```python
+random.randint(0,9) # the dot means "inside of"
+```
+random.randint takes two parameters, a lowest number to return and a highest number to return.
+
+Write a function which uses your existing die roll function to return the sum of rolling two dice.
+Is this easier to read than if you'd written this without calling a sub function?
+
+Write a program to randomly print a magic 8 ball statement.
+
+Write a program that never stops.
+
+
